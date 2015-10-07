@@ -2,8 +2,8 @@
 module CurrencyInWords
   ActionView::Helpers::NumberHelper.class_eval do
 
-    DEFAULT_CURRENCY_IN_WORDS_VALUES = {:currencies=>{:default=>{:unit=>{:one=>'dollar',:many=>'dollars'},
-                                        :decimal=>{:one=>'cent',:many=>'cents'}}},
+    DEFAULT_CURRENCY_IN_WORDS_VALUES = {:currencies=>{:default=>{:unit=>{:one=>'rupee',:many=>'rupees'},
+                                        :decimal=>{:one=>'paisa',:many=>'paisa'}}},
                                         :connector=>', ',:format=>'%n',:negative_format=>'minus %n'}
 
     # Formats a +number+ into a currency string (e.g., 'one hundred dollars'). You can customize the 
